@@ -44,7 +44,7 @@ MyTelegramBot.setChatTitle(1234, 'Chat Title');
 MyTelegramBot.setChatDescription(1234, 'Chat Description');
 MyTelegramBot.pinChatMessage(1234, 'Pinned Message');
 MyTelegramBot.unpinChatMessage(1234);
-MyTelegramBot.answerCallbackQuery({ callback_query_id: '432832' });
+MyTelegramBot.answerCallbackQuery('432832');
 MyTelegramBot.editMessageText('test-text', { disable_web_page_preview: true });
 MyTelegramBot.editMessageCaption('My Witty Caption', { message_id: 1245 });
 MyTelegramBot.editMessageReplyMarkup({ inline_keyboard: [[{
