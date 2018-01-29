@@ -172,7 +172,6 @@ declare namespace TelegramBot {
     }
 
     interface AnswerCallbackQueryOptions {
-        callback_query_id: string;
         text?: string;
         show_alert?: boolean;
         url?: string;
@@ -867,7 +866,7 @@ declare class TelegramBot extends EventEmitter {
 
     unpinChatMessage(chatId: number | string): Promise<boolean | Error>;
 
-    answerCallbackQuery(options?: TelegramBot.AnswerCallbackQueryOptions): Promise<boolean | Error>;
+    answerCallbackQuery(callbackQueryId: string, options?: TelegramBot.AnswerCallbackQueryOptions): Promise<boolean | Error>;
 
     editMessageText(text: string, options?: TelegramBot.EditMessageTextOptions): Promise<TelegramBot.Message | boolean | Error>;
 
